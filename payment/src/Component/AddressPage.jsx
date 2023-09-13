@@ -5,10 +5,11 @@ const AddressPage = () => {
 
   const props=1045;
   const [address, setAddress] = useState(null);
+  // const [btn,setBtn]=useState(false)
 
   const handleAddressSave = (event) => {
     event.preventDefault();
-
+// setBtn(true);
     const street = event.target.elements.street.value;
     const city = event.target.elements.city.value;
     const state = event.target.elements.state.value;
@@ -100,7 +101,9 @@ const AddressPage = () => {
           </p>
         </div>
       )}
-            <RazorpayPayment props={props} />  
+
+      {<RazorpayPayment props={props} />}
+           
 
 
     </div>
