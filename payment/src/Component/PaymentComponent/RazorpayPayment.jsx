@@ -69,6 +69,7 @@ class RazorpayPayment extends Component {
 
     console.log('Payment Successful', response);
     // Handle the response, e.g., update UI, make API calls
+    
 
   };
 

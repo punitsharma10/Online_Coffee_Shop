@@ -5,7 +5,7 @@ const AddressPage = () => {
 
   const props=1045;
   const [address, setAddress] = useState(null);
-  // const [btn,setBtn]=useState(false)
+  const [btn,setBtn]=useState(false)
 
   const handleAddressSave = (event) => {
     event.preventDefault();
@@ -17,8 +17,13 @@ const AddressPage = () => {
 
     setAddress({ street, city, state, postalCode });
   };
+  const handleSave=()=>{
+    setBtn(true)
+  }
 
   return (
+
+    
     <div style={{ fontFamily: 'Arial, sans-serif', margin: 0, padding: 0, backgroundColor: '#f2f2f2' }}>
       <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Address Page</h1>
 
@@ -65,7 +70,7 @@ const AddressPage = () => {
               style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '3px' }}
             />
           </div>
-          <button
+          <button onClick={handleSave}
             type="submit"
             style={{ backgroundColor: '#007bff', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '3px', cursor: 'pointer' }}
           >
@@ -86,23 +91,28 @@ const AddressPage = () => {
             margin: '20px auto',
           }}
         >
-          <h2>Address Display:</h2>
+          <h2>Delivered Address:</h2>
+          <br />
           <p>
             Street: <span>{address.street}</span>
           </p>
+          <br />
           <p>
             City: <span>{address.city}</span>
           </p>
+          <br />
           <p>
             State: <span>{address.state}</span>
           </p>
+          <br />
           <p>
             Postal Code: <span>{address.postalCode}</span>
           </p>
+          <br />
         </div>
       )}
 
-      {<RazorpayPayment props={props} />}
+      {btn?<RazorpayPayment  props={props}  /> :""}
            
 
 
