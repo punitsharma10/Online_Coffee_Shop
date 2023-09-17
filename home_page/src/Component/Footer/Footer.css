@@ -1,0 +1,74 @@
+.footerfirst{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.footerLogo{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+.footerLogo img{
+
+width: 35px;
+}
+.footerRegd{
+    width: 150px;
+    text-align: left;
+
+}
+.footerRegd h5{
+margin-top: 30px;
+    margin-bottom: -10px;
+
+
+}
+.footerSupport{
+    text-align: left;
+
+}
+.footerLegal{
+    text-align: left;
+
+}
+.footerSecond{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+    margin-top: 80px;
+
+
+}
+.footerbtnService {
+    background-color:#220E08;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-color: none;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.footerbtnContact{
+    background-color:#220E08;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-color: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.footerThird{
+    display: flex;
+    justify-content: flex-start;
+    
+    gap: 30px;
+
+    margin-top: 150px;
+    
+}

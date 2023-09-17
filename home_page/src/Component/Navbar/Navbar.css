@@ -1,0 +1,79 @@
+.navMid{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+/* style={{display:"flex",display:"flex",justifyContent:"space-around",gap:"10px"}} */
+.navLast{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.navmain{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+
+
+}
+.productSelect{
+    background-color: #f2f2f2;
+    border: none;
+    color: none;
+    margin: 0;
+    padding: 0;
+}
+
+.newsSelect{
+    background-color: #f2f2f2;
+    border: none;
+    color: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Hamburger Menu Button Styles */
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Styles for the open state */
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+   .productSelect {
+    display: none; /* Initially hide the dropdown */
+    /* Add other necessary styles for positioning and appearance */
+   }
+  
+   .productSelect {
+    display: flex;
+
+   }
+  
+/* style={{display:"flex",justifyContent:"space-between", margin:"auto", alignItems:"center"}} */
