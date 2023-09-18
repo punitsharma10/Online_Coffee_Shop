@@ -1,0 +1,29 @@
+.Pagination_Div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.Pagination_Main_Div {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Pagination_Div>button {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.Pagination_Div>p {
+    font-size: 22px;
+}
+
+.Pagination_Div>button:focus {
+    background-color: black;
+}
