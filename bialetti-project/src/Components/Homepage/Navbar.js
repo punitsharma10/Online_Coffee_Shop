@@ -21,9 +21,9 @@ const Navbar = () => {
                 <img src='https://www.bialetti.com/static/version1686550349/frontend/bialetti/bialetti_italia/en_US/icons/Truck.svg' />
                 <div className="free-shipping"> <p> Free shipping for orders over 59,90€ </p></div>
             </div>
-            <div className="language">
+            {/* <div className="language">
                 <span>EN</span>----<span>IT</span>
-            </div>
+            </div> */}
             <div className="logo">
                 <Link to='/'>
                     <img src="https://www.bialetti.com/media/logo/default/5-layers_3x.png" alt="Logo" />
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <ul>
                     <li>
                         <a href="https://www.bialetti.com/it_en/bialetti-torrefazione">
-                            COFFEE ROASTING BIALETTI
+                            COFFEE ROASTING
                         </a>
                     </li>
                     <li>
@@ -62,9 +62,7 @@ const Navbar = () => {
                     <li>
                         <Link to="./product">
                             PRODUCTS
-                            <a href="#">
-                                {/* PRODUCTS */}
-                            </a>
+                           
                         </Link>
 
                     </li>

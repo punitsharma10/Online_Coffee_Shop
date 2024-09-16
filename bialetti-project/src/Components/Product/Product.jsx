@@ -17,7 +17,7 @@ export const Product = () => {
 
 
   useEffect(() => {
-    let url = `https://mymock-sl72.onrender.com/products`;
+    let url = `https://cycle-0ttx.onrender.com/data`;
     if (currentPage) {
       url += `?_limit=9&_page=${currentPage}`
     }

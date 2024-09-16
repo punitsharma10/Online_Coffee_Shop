@@ -14,6 +14,8 @@ const initState = {
     currCard: {},
 };
 
+
+
 const paymentReducer = (state = initState, action) => {
     const { type, payload } = action;
 
